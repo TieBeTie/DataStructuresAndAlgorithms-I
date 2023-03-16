@@ -5,7 +5,7 @@
 3. If you want to use STL library data structures, such as std::vector, std::stack, std:: unordered_map etc in any task of the course, you have to implement them in the theoretical contest to get points.
 4. Using namespace std is not allowed, instead write concrete namespace member, for example, using std::cin;
 5. Constraints is very important, use minimal count of bytes to save the premitive type or if there is no constraints, use primitive type with maximal count of bytes.
-6. Points for the task will leak if a memory leaks are found on the code-review.
+6. Points for the task will leak if memory leaks are found on the code-review.
 
 ## Code-review passing algorithm
 
