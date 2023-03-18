@@ -10,7 +10,7 @@
 ## Code-review passing algorithm
 
  1. Pass tests in the contest.
- 2. Push your code to github repository and send pull request. In collaborators add TieBeTie and
+ 2. Push your code to github repository and send pull request. In collaborators add TieBeTie and artrimbaud
  3. Fix the remarks and **send the fixed solution again to the contest**. If the solution is not sent to the contest, it will not be checked.
  4. In pull request comments send the **link to the successfully passed solution** 
 
