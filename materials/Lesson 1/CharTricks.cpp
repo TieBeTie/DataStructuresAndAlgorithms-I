@@ -17,9 +17,9 @@ int main() {
     // c is number
   }
   // Captitalize problem
-  int lowercase_uppercase__difference =
+  int lowercase_uppercase_difference =
       'B' - 'b';  // or 'A' - 'a', 'J' - 'j' whatever
   if ('a' <= c <= 'z') {
-    std::cout << c + lowercase_uppercase__difference;
+    std::cout << c + lowercase_uppercase_difference;
   }
 }
