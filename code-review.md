@@ -10,11 +10,11 @@
 ## Code-review passing algorithm
 
  1. Pass tests in the contest.
- 2. Create your own repository with readme if it doesn't exist
- 3. Create a branch NameOfTheProblem in the repository
+ 2. Create your **own** repository with readme if it doesn't exist
+ 3. Create a branch ***NameOfTheProblem*** in the repository
  4. Clone your repository
- 5. Commit and push your solution to the NameOfTheProblem branch
- 6. Create a pull-request to merge the NameOfTheProblem branch with the main branch
+ 5. Commit and push your solution to the ***NameOfTheProblem*** branch
+ 6. Create a pull-request to merge the ***NameOfTheProblem*** branch with the main branch
  7. Do not approve the pull-request.
  8. Add Islam and me to collaborators
  9. Fix the remarks and **send the fixed solution again to the contest**. If the solution is not sent to the contest, it will not be checked.
