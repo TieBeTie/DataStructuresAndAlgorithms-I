@@ -18,7 +18,8 @@
  7. Do not approve the pull-request.
  8. Add Islam and me to collaborators
  9. Fix the remarks and **send the fixed solution again to the contest**. If the solution is not sent to the contest, it will not be checked.
- 10. In pull request comments send the **link to the successfully passed solution** 
+ 10. In pull request comments send the **link to the successfully passed solution**, example:
+https://contest.yandex.ru/contest/47619/run-report/0000000000
 
 ## Assessment
 
