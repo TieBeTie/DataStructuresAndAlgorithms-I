@@ -10,7 +10,9 @@ int main() {
   // https://en.wikipedia.org/wiki/ASCII#Printable_characters tables are
   // different, we using just order The following code above will work for each
   // ASCII standard
-  if ('a' <= c <= 'z' || 'A' <= c <= 'Z') {
+  //  if ('a' <= c <= 'z' || 'A' <= c <= 'Z') 
+  // that is not correct because 'a' <= c <= 'z' => true/false <= 'z' always true
+  if ('a' <= c && c <= 'z' || 'A' <= c && c <= 'Z') {
     // c is letter
   }
   if ('0' <= c && c <= '9') {
@@ -19,7 +21,7 @@ int main() {
   // Captitalize problem
   int lowercase_uppercase_difference =
       'B' - 'b';  // or 'A' - 'a', 'J' - 'j' whatever
-  if ('a' <= c <= 'z') {
+  if ('a' <= c && c <= 'z') {
     std::cout << c + lowercase_uppercase_difference;
   }
 }
