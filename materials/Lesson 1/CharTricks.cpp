@@ -11,7 +11,7 @@ int main() {
   // different, we using just order The following code above will work for each
   // ASCII standard
   //  if ('a' <= c <= 'z' || 'A' <= c <= 'Z') 
-  // that is not correct because 'a' <= c <= 'z' => true/false <= 'z' always true
+  // that is not correct because 'a' <= c <= 'z' => true/false <= 'z' is always true
   if ('a' <= c && c <= 'z' || 'A' <= c && c <= 'Z') {
     // c is letter
   }
