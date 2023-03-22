@@ -25,7 +25,7 @@ int main() {
   }
   if (px != NULL /*same thing NULL is 0 or (void*)0 */) {
   }
-  // but it C++20, we should to use nullptr
+  // but it C++20, we should use nullptr
   if (px != nullptr) {
     // that's ok
   }
