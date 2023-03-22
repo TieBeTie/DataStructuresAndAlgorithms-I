@@ -21,6 +21,13 @@ int main() {
   // Captitalize problem
   int lowercase_uppercase_difference =
       'B' - 'b';  // or 'A' - 'a', 'J' - 'j' whatever
+  /* someone said that this is too long a variable name,
+  but in your code you have to write comments in addition to just code.
+  This is where a comment is obviously needed, 
+  but you don't have to do it by naming the variable this way.
+  Write the code in such a clear way 
+  that you have to write a minimum number of comments. 
+  This way the code will be more readable and nice-looking*/
   if ('a' <= c && c <= 'z') {
     std::cout << c + lowercase_uppercase_difference;
   }
