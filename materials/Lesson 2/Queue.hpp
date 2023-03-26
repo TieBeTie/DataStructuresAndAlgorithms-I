@@ -10,7 +10,8 @@ class Queue {
   ~Queue();
   void PushFront(T value);
   void PopBack();
-  T Top() const;
+  T Back() const;
+  T Front() const;
   void Resize(size_t capacity);
   size_t Size() const;
   void Clear();
@@ -60,8 +61,13 @@ void Queue<T>::PopBack() {
 }
 
 template <class T>
-T Queue<T>::Top() const {
+T Queue<T>::Back() const {
   return data_[Mod(tail_ - 1, capacity_)];
+}
+
+template <class T>
+T Queue<T>::Front() const {
+  return data_[Mod(head_, capacity_)];
 }
 
 template <class T>
