@@ -1,5 +1,3 @@
-#include <vector>
-
 const size_t CAPACITY = 256;
 
 template <class T>
