@@ -67,7 +67,7 @@ int main() {
   int** a = new int*[3];
   // and create arrays
   for (int i = 0; i < 3; ++i) {
-    a[i] = new int[2]{1};
+    a[i] = new int[2]{42}; // 42 0
   }
   for (int i = 0; i < 3; ++i) {
     for (int j = 0; j < 2; ++j) {
