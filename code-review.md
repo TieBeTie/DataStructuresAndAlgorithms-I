@@ -6,6 +6,7 @@
 4. Using namespace std is not allowed, instead write concrete namespace member, for example, using std::cin;
 5. Constraints is very important, use minimal count of bytes to save the premitive type or if there is no constraints, use primitive type with maximal count of bytes.
 6. Points for the task will leak if memory leaks are found on the code-review.
+7. If a similar code is found, we will be forced to give the cheater a negative score for the problem
 
 ## Code-review passing algorithm
 
