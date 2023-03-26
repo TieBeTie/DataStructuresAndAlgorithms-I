@@ -1,0 +1,3 @@
+# options: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+BasedOnStyle: Google 
+IndentWidth: 2
