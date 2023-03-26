@@ -84,3 +84,6 @@ int main() {
 }
 // 10D arrays???
 // https://www.youtube.com/watch?v=xFtYY-Rmf1Y
+// or
+// N-D arrays
+// https://www.geeksforgeeks.org/how-to-declare-a-2d-array-dynamically-in-c-using-new-operator/
