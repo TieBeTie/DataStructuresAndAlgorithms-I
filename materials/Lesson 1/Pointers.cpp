@@ -21,7 +21,7 @@ int main() {
   cout << px << '\n';   // address (hexadecimal 64 bit number)
 
   px = nullptr;
-  if (!px /*converts to !px == 0*/) {
+  if (!px /*converts to !px == 1*/) {
   }
   if (px != NULL /*same thing NULL is 0 or (void*)0 */) {
   }
