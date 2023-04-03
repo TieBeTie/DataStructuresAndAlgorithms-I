@@ -18,40 +18,40 @@ struct IsLess {
  */
 
 /* This function merges two SORTED
- * arrays (l_array and r_array) of sizes l_count and r_count respectively, and
+ * arrays (l_array and r_array) of sizes l_size and r_size respectively, and
  * stores the result in a dynamically allocated buffer array. The result is
  * sorted according to the comparison function object is_less.
  */
 template <class T, class TLess = IsLess<T>>
-void Merge(T *l_array, T *r_array, int l_count, int r_count,
+void Merge(T *l_array, T *r_array, int l_size, int r_size,
            const TLess &is_less = TLess()) {
-  T *buffer = new T[r_count + l_count];
+  T *buffer = new T[l_size + r_size];
 
   // Merge the two arrays, maintaining the sorted order.
-  int i = 0, j = 0;
-  while (i < l_count && j < r_count) {
-    if (is_less(l_array[i], r_array[j])) {
-      // buffer[i + j] = l_array[i++];
+  int l_it = 0, r_it = 0;
+  while (l_it < l_size && r_it < r_size) {
+    if (is_less(l_array[l_it], r_array[r_it])) {
+      // buffer[l_it + r_it] = l_array[l_it++];
       // =>
-      // l_array[i]; i++; buffer[i + j]; :(
-      buffer[i++ + j] = l_array[i];
+      // l_array[l_it]; l_it++; buffer[l_it + r_it]; :(
+      buffer[l_it++ + r_it] = l_array[l_it];
     } else {
-      buffer[i + j++] = r_array[j];
+      buffer[l_it + r_it++] = r_array[r_it];
     }
   }
 
   // Copy any remaining elements from the left array to the buffer.
-  while (i < l_count) {
-    buffer[i++ + j] = l_array[i];
+  while (l_it < l_size) {
+    buffer[l_it++ + r_it] = l_array[l_it];
   }
 
   // Copy any remaining elements from the right array to the buffer.
-  while (j < r_count) {
-    buffer[i + j++] = r_array[j];
+  while (r_it < r_size) {
+    buffer[l_it + r_it++] = r_array[r_it];
   }
 
   // Copy the sorted elements back into the original array.
-  for (int i = 0; i < l_count + r_count; l_array[i++] = buffer[i])
+  for (int i = 0; i < l_size + r_size; l_array[i++] = buffer[i])
     ;
   delete[] buffer;
 }
