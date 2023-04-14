@@ -11,7 +11,7 @@ class Queue {
   T Back() const;
   T Front() const;
   bool Resize(size_t capacity);  // change the array capacity
-  size_t Size() const;
+  size_t size() const;
   void Clear();
 
  private:
@@ -38,7 +38,7 @@ Queue<T>::~Queue() {
 }
 
 template <class T>
-size_t Queue<T>::Size() const {
+size_t Queue<T>::size() const {
   return size_;
 }
 
