@@ -44,8 +44,8 @@ void InOrderTraversal(Node<T> *root) {
 
 template <typename T>
 struct IsLess {
-  bool IsGreater(const T &l, const T &r) const { return l <= r; }
-  bool operator()(const T &l, const T &r) const { return l <= r; }
+  bool IsGreater(const T &l, const T &r) const { return l <= r; } // the same
+  bool operator()(const T &l, const T &r) const { return l <= r; } //  but this is more convenient
 };
 
 template <class T, class TLess = IsLess<T>>
@@ -109,7 +109,7 @@ class BinaryTree {
     bool direction;
 
     while (head != nullptr) {
-      if (comparator_(head->key, key)) {
+      if (comparator_(head->key, key)) { // or comparator_.IsGreater(head->key, key)
         tale = head;
         head = head->right;
         direction = false;
