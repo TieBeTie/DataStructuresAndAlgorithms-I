@@ -23,6 +23,7 @@ void f2(int i = 0) {
     return;
   }
   // some code
+  f2(++i);
 }
 
 int main() {
