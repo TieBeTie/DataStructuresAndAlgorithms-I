@@ -9,8 +9,8 @@ struct Node {
   Node *left;
   Node *right;
 
-  Node(T k) {
-    key = k;
+  Node(T x) {
+    key = x;
     left = nullptr;
     right = nullptr;
   }
