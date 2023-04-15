@@ -1,5 +1,3 @@
-// recursion
-// recursion <-> loop
 #include <iostream>
 #include <stack>
 
