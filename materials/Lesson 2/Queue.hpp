@@ -10,7 +10,7 @@ class Queue {
   bool PopBack();
   T Back() const;
   T Front() const;
-  bool Resize(size_t capacity);  // change the array capacity
+  void Resize(size_t capacity);  // change the array capacity
   size_t size() const;
   void Clear();
 
@@ -52,7 +52,7 @@ void Queue<T>::Clear() {
 
 template <class T>
 bool Queue<T>::PopBack() {
-  if (size_ == capacity_ / 4) {
+  if (size_ == capacity_ / 4 && 64 <= capacity_ / 2) {
     Resize(capacity_ / 2);
   }
   if (size_ != 0) {
@@ -83,10 +83,7 @@ void Queue<T>::PushFront(T value) {
 }
 
 template <class T>
-bool Queue<T>::Resize(size_t new_capacity) {
-  if (new_capacity <= capacity_) {
-    return false;
-  }
+void Queue<T>::Resize(size_t new_capacity) {
   T* clipboard = new T[new_capacity];
   for (size_t i = 0, j = head_; i < size_;) {
     clipboard[i++] = data_[Mod(j++, capacity_)];
@@ -95,7 +92,6 @@ bool Queue<T>::Resize(size_t new_capacity) {
   data_ = clipboard;
   capacity_ = new_capacity;
   head_ = 0;
-  return true;
 }
 
 template <class T>
