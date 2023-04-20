@@ -52,7 +52,7 @@ void Queue<T>::Clear() {
 
 template <class T>
 bool Queue<T>::PopBack() {
-  if (size_ == capacity_ / 4 && 64 <= capacity_ / 2) {
+  if (size_ == capacity_ / 4 && CAPACITY <= capacity_ / 2) {
     Resize(capacity_ / 2);
   }
   if (size_ != 0) {
