@@ -1,4 +1,4 @@
-const size_t DEFAULT_CAPACITY = 256;
+const size_t DEFAULT_CAPACITY = 16;
 
 template <class T>
 class Queue {
