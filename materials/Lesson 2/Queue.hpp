@@ -1,4 +1,4 @@
-const size_t CAPACITY = 256;
+const size_t DEFAULT_CAPACITY = 256;
 
 template <class T>
 class Queue {
@@ -25,7 +25,7 @@ class Queue {
 };
 
 template <class T>
-Queue<T>::Queue() : Queue(CAPACITY) {}
+Queue<T>::Queue() : Queue(DEFAULT_CAPACITY) {}
 
 template <class T>
 Queue<T>::Queue(size_t capacity) : capacity_{capacity}, head_{0}, size_{0} {
@@ -45,14 +45,14 @@ size_t Queue<T>::size() const {
 template <class T>
 void Queue<T>::Clear() {
   delete[] data_;
-  capacity_ = CAPACITY;
+  capacity_ = DEFAULT_CAPACITY;
   data_ = new T[capacity_];
   head_ = size_ = 0;
 }
 
 template <class T>
 bool Queue<T>::PopBack() {
-  if (size_ == capacity_ / 4 && CAPACITY <= capacity_ / 2) {
+  if (size_ == capacity_ / 4 && DEFAULT_CAPACITY <= capacity_ / 2) {
     Resize(capacity_ / 2);
   }
   if (size_ != 0) {
