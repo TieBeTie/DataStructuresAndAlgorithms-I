@@ -26,11 +26,11 @@ template <class T>
 class MinStack {
  public:
   void Push(const T& value) {
-    stack.emplace(
-        value, stack.empty() ? value : std::min(value, stack.top().min_value));
+    stack_.emplace(
+        value, stack_.empty() ? value : std::min(value, stack_.top().min_value));
   }
-  T GetMin() { return stack.top().min_value; }
-  void Pop() { stack.pop(); }
+  T GetMin() { return stack_.top().min_value; }
+  void Pop() { stack_.pop(); }
 
  private:
   struct Pair {
