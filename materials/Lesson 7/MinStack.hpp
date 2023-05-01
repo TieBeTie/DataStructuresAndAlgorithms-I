@@ -25,7 +25,7 @@ using std::stack;
 template <class T>
 class MinStack {
  public:
-  void push(const T& value) {
+  void Push(const T& value) {
     stack.emplace(
         value, stack.empty() ? value : std::min(value, stack.top().min_value));
   }
