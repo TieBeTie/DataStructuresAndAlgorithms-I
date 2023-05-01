@@ -5,7 +5,7 @@
 using std::stack;
 
 // Overriding means that you are going to inherit from STL container. Don't do
-// that! STL containers are not designed for inheriting from them.
+// this! STL containers are not designed for inheriting from them.
 // For instance, std::stack  doesn't contain virtual function specifier
 
 // template <class T>
@@ -21,7 +21,7 @@ using std::stack;
 //   T GetMin() { return Base::top().min_value; }
 // };
 
-// Do this
+// Do it like this
 template <class T>
 class MinStack {
  public:
