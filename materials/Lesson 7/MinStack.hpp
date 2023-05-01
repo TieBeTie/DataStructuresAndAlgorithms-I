@@ -41,5 +41,5 @@ class MinStack {
       this->min_value = min_value;
     }
   };
-  stack<Pair> stack;
+  stack<Pair> stack_;
 };
