@@ -43,5 +43,3 @@ class MinStack {
   };
   stack<Pair> stack;
 };
-
-int main() { MinStack<int> s; }
