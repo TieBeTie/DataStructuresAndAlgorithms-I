@@ -1,7 +1,7 @@
 ## Course program
 
 #### Unit 1: Introduction
-1. Introduction. Big-O notation. 
+1. Introduction. Complexity. RAM-model.
 2. Linked Lists. Stack implementation using a linked list or an array. Keeping minimum in a stack. Correct brackets sequence checking. Monotonic stack
 3. Binary Search
 
