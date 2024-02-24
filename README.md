@@ -1,4 +1,4 @@
-# Data Structures and Algorithms I 2023
+# Data Structures and Algorithms I 2024
 
 Welcome to the Data Structures & Algorithms I course! 
 
