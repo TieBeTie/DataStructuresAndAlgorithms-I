@@ -2,7 +2,7 @@
 Welcome to the repository for the Algorithms and Data Structures I course offered by the English-speaking stream of MIPT.
 
 # Course Overview:
-This repository hosts materials, assignments, and resources for the Algorithms and Data Structures III course. The course covers advanced topics in algorithms and data structures, providing students with a deeper understanding of complex algorithms and their applications.
+This repository hosts materials, assignments, and resources for the Algorithms and Data Structures I course. The course covers advanced topics in algorithms and data structures, providing students with a deeper understanding of complex algorithms and their applications.
 
 
 - [Course program](/program.md)
